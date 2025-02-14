@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Game</h1>
+
+        <!-- Color Prediction Section -->
+        <section id="color-prediction">
+            <h2>Guess the Color</h2>
+            <button id="red" onclick="predictColor('red')">Red</button>
+            <button id="green" onclick="predictColor('green')">Green</button>
+            <button id="blue" onclick="predictColor('blue')">Blue</button>
+            <p id="color-result"></p>
+        </section>
+
+        <!-- Number Prediction Section -->
+        <section id="number-prediction">
+            <h2>Guess the Number (1 to 10)</h2>
+            <input type="number" id="number-input" min="1" max="10">
+            <button onclick="predictNumber()">Guess</button>
+            <p id="number-result"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
